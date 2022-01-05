@@ -40,7 +40,7 @@ def add_user(user:User) -> dict:
 
     return users[-1]
 
-
+'''
 @app.delete("/user/{id}", tags=["users"])
 async def delete_user(id: int) -> dict:
     for user in users:
@@ -53,6 +53,7 @@ async def delete_user(id: int) -> dict:
     return {
         "udata": f"User with id {id} not found."
     }
+    '''
 todos = []
 class Course(BaseModel):
     id: int
@@ -75,7 +76,7 @@ def add_todo(todo:Course) -> dict:
 
     return todos[-1]
 
-
+'''
 @app.delete("/todo/{id}", tags=["todos"])
 async def delete_todo(id: int) -> dict:
     for todo in todos:
@@ -87,4 +88,4 @@ async def delete_todo(id: int) -> dict:
 
     return {
         "data": f"Todo with id {id} not found."
-    }
+    }'''
